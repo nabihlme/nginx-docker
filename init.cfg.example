@@ -1,0 +1,5 @@
+NOIP_USER=user@gmail.com
+NOIP_PASSWORD=password12345
+CERTBOT_USER=user@gmail.com
+CERTBOT_DOMAIN=userblog.ddns.net
+NGINX_UWSGI_PASS=unix:/tmp/myproj.sock

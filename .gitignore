@@ -1,0 +1,11 @@
+#MacOS
+*.DS_Store
+
+# Vim
+*.swp
+
+# Secerts
+*.cfg
+
+# Tar
+*.tar.gz

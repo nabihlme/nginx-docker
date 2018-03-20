@@ -1,0 +1,26 @@
+
+### Configure
+
+cp init.cfg.example init.cfg
+vim init.cfg
+
+
+### Build
+# Has dhparam step, which may take a little bit of time
+
+docker build -t nginx-docker .
+
+
+### Test
+
+docker run -it -p443:443 -p80:80 --entrypoint /bin/bash nginx-docker:latest
+
+
+### Run
+
+docker run -d -p443:443 -p80:80 -name run-nginx-docker nginx-docker:latest
+
+
+### Stop
+
+docker stop run-nginx-docker
